@@ -95,7 +95,8 @@ const server = http.createServer(async (req, res) => {
       }
 
       const [_, userId] = apiKey.split('-');
-      const user = await db.collection('user').findOne({ _id: ObjectId(userId) });
+      
+      const user = await db.collection('user').findOne({ _id: new ObjectId(userId) });
 
       if (!user) {
         res.statusCode = 403;
@@ -119,21 +120,21 @@ const server = http.createServer(async (req, res) => {
       }
 
       const [_, userId] = apiKey.split('-');
-      const user = await db.collection('user').findOne({ _id: ObjectId(userId) });
+      const user = await db.collection('user').findOne({ _id: new ObjectId(userId) });
 
       if (!user) {
         res.statusCode = 403;
         return res.end(JSON.stringify({ error: 'Invalid API key' }));
       }
 
-      const post = await db.collection('post').findOne({ _id: ObjectId(id) });
+      const post = await db.collection('post').findOne({ _id: new ObjectId(id) });
       if (!post) {
         res.statusCode = 404;
         return res.end(JSON.stringify({ error: 'Post not found' }));
       }
 
       const updatedAt = new Date();
-      await db.collection('post').updateOne({ _id: ObjectId(id) }, { $set: { content, updatedAt } });
+      await db.collection('post').updateOne({ _id: new ObjectId(id) }, { $set: { content, updatedAt } });
       res.statusCode = 200;
       return res.end(JSON.stringify({ message: 'Post updated successfully' }));
     }

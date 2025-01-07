@@ -1,6 +1,6 @@
 # Dự án Node.js Thuần với MongoDB
 
-Đây là một ứng dụng Node.js thuần (không sử dụng Express) kết nối với MongoDB, cung cấp các API cho việc đăng ký, đăng nhập người dùng và quản lý bài viết.
+Đây là một ứng dụng Node.js thuần kết nối với MongoDB, cung cấp các API cho việc đăng ký, đăng nhập người dùng và quản lý bài viết.
 
 ## Yêu Cầu Hệ Thống
 
@@ -16,7 +16,7 @@
 
 2. **Config file .env**:
 
-  MONGODB_URI: Đường dẫn kết nối đến cơ sở dữ liệu MongoDB.
+  - MONGODB_URI: Đường dẫn kết nối đến cơ sở dữ liệu MongoDB.
 
 3. **Chạy ứng dụng**:
 
