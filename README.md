@@ -1,4 +1,4 @@
-# Dự án Node.js Thuần với MongoDB
+# Dự án Node.js + MongoDB
 
 Đây là một ứng dụng Node.js thuần kết nối với MongoDB, cung cấp các API cho việc đăng ký, đăng nhập người dùng và quản lý bài viết.
 
