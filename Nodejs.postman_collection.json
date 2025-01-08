@@ -52,7 +52,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\": \"email@example.com\",\n  \"password\": \"matkhau\"\n}",
+					"raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"123456\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -86,7 +86,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"apiKey\": \"mern-677d54b792df0db1244daa8e-admin@example.com-350fa9cf-061a-4074-a785-cba9a6a9c8f6\",\n  \"content\": \"Nội dung bài viết\"\n}",
+					"raw": "{\n  \"apiKey\": \"mern-$677e8053dd00b59babe78325$-$admin@example.com$-$50f838ea-d26a-4ead-8218-3c819d878bfc$\",\n  \"content\": \"Nội dung bài viết\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -119,7 +119,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"apiKey\": \"mern-677d54b792df0db1244daa8e-admin@example.com-4a6d7c5b-bedc-4fb8-8a03-2f546026c19d\",\n    \"content\": \"Updated post content\"\n}",
+					"raw": "{\n    \"apiKey\": \"mern-$677e8053dd00b59babe78325$-$admin@example.com$-$50f838ea-d26a-4ead-8218-3c819d878bfc$\",\n    \"content\": \"Updated post content\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -127,7 +127,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/posts/677d57f699cebe0de3c053d9",
+					"raw": "http://localhost:3000/posts/677e84409891ece1c40244f3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -135,7 +135,7 @@
 					"port": "3000",
 					"path": [
 						"posts",
-						"677d57f699cebe0de3c053d9"
+						"677e84409891ece1c40244f3"
 					]
 				}
 			},
